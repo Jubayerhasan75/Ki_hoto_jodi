@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>কি হতো যদি?</title>
+    <!-- Keeping Tailwind CDN for simple setup without PostCSS config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Hind Siliguri', sans-serif;
+        background-color: #f0fdfa;
+        background-image: 
+          radial-gradient(#14b8a6 0.5px, transparent 0.5px), 
+          radial-gradient(#14b8a6 0.5px, #f0fdfa 0.5px);
+        background-size: 20px 20px;
+        background-position: 0 0, 10px 10px;
+        min-height: 100vh;
+      }
+      
+      /* Abstract floating shapes for visual interest */
+      .bg-shape {
+        position: fixed;
+        z-index: -1;
+        opacity: 0.15;
+        animation: float 20s infinite ease-in-out;
+      }
+      
+      @keyframes float {
+        0% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-20px) rotate(10deg); }
+        100% { transform: translateY(0px) rotate(0deg); }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+    "vite": "https://aistudiocdn.com/vite@^7.2.6",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <!-- Background Decor -->
+    <svg class="bg-shape" style="top: 10%; left: 5%; width: 200px;" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="1">
+      <circle cx="12" cy="12" r="10" />
+      <path d="M12 6v6l4 2" />
+    </svg>
+    <svg class="bg-shape" style="bottom: 10%; right: 5%; width: 300px;" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="1">
+      <rect x="2" y="5" width="20" height="14" rx="2" />
+      <line x1="12" y1="12" x2="12" y2="12.01" />
+    </svg>
+    
+    <div id="root"></div>
+    <!-- Pointing to src/index.tsx for Vite -->
+    <script type="module" src="/src/index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
