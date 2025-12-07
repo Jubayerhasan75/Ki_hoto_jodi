@@ -303,9 +303,9 @@ const MoneyCalculator: React.FC = () => {
                   }}
                 />
                 <Bar dataKey="amount" radius={[6, 6, 0, 0]} animationDuration={1500}>
-                  {chartData.map((_, index) => ( // ✅ FIX: 'entry' replaced with '_'
-                    <Cell key={`cell-${index}`} fill={index === 1 ? '#10b981' : '#a7f3d0'} />
-                  ))}
+                  {chartData.map((_, index) => (
+  <Cell key={`cell-${index}`} fill={index === 1 ? '#10b981' : '#a7f3d0'} />
+))}
                 </Bar>
               </BarChart>
             </ResponsiveContainer>

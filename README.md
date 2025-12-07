@@ -1,20 +1,45 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+A modern, responsive web application designed for users to visualize the long-term financial and time-saving impact of small, positive changes in their daily habits and spending. Built entirely in Bengali for local accessibility.
 
-# Run and deploy your AI Studio app
+✨ Key Features
+Money Savings Calculator: Instantly track annual and 5-year savings from reducing daily costs (e.g., smoking, excessive tea/coffee).
 
-This contains everything you need to run your app locally.
+Time Detox Tracker: Calculate the significant amount of time (in days/hours) gained by reducing screen time or social media usage.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1Mmf4UFpuV6zNn7jesFhnfOHCf3Df8juz
+Relatable Results: Displays potential purchases (e.g., "A new bike," "Smartphone") that could be afforded with the calculated savings.
 
-## Run Locally
+Modern UI: Fast, mobile-first design powered by Tailwind CSS.
 
-**Prerequisites:**  Node.js
+🛠️ Tech Stack
+Frontend: React (Vite)
 
+Styling: Tailwind CSS
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Visualization: Recharts
+
+Icons: Lucide-React
+
+⚙️ Local Setup
+Follow these steps to run the project locally.
+
+Clone the repository:
+
+Bash
+
+git clone [YOUR_REPO_URL]
+cd what-if-calculator
+Install dependencies:
+
+Bash
+
+npm install
+Start the development server:
+
+Bash
+
+npm run dev
+The app will be accessible at http://localhost:5173.
+
+📜 Licensing & Copyright
+© 2025 কি হতো যদি? প্রজেক্ট . All rights reserved.
+
+This project is licensed under the [Insert Your Chosen License, e.g., Apache 2.0 or GPLv3]. Unauthorized commercial use or modification of the attribution is strictly prohibited. For details, please see the LICENSE file.
